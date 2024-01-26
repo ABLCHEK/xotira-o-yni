@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Xotira O'yini</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 class="title">Xotira O'yini</h1>
+
+<div class="container">
+  <div id="menu" class="menu">
+    <div id="settings" class="settings settings--expanded">
+      <div class="settings__container">
+        <h2 class="settings__header">Sozlamalar</h2>
+
+        <div class="settings__group">
+          <label for="matches" class="settings__label">Qatorlar soni</label>
+          <input id="matches" type="number" max="20" min="2" value="4" class="settings__input" />
+        </div>
+
+        <div class="settings__group">
+          <label for="timed" class="settings__label">Vaqtli o'yin</label>
+          <input id="timed" type="checkbox" class="settings__checkbox-input" />
+          <label for="timed" class="settings__checkbox"><i class="fa fa-times"></i></label>
+        </div>
+
+        <div id="timer-group" class="settings__group">
+          <label for="timer" class="settings__label">Taymer (daqiqa)</label>
+          <input id="timer" type="number" max="60" min="1" value="1" class="settings__input" />
+        </div>
+
+        <div class="settings__group">
+          <label for="mismatch" class="settings__label">Hisoblashning mos kelmasligi</label>
+          <input id="mismatch" type="checkbox" class="settings__checkbox-input" checked />
+          <label for="mismatch" class="settings__checkbox"><i class="fa fa-times"></i></label>
+        </div>
+
+        <button id="start" class="btn">Boshlash</button>
+      </div>
+    </div>
+    <button id="menu-expand" class="menu__expand">
+      <i class="fa fa-chevron-up"></i>
+    </button>
+  </div>
+ 
+  <div id="play-area" class="play-area">
+    <div id="timer-display" class="timer-display"></div>
+    <div id="end-game" class="end-game">
+      <h2 class="end-game__message"></h2>
+      <h4 class="end-game__mismatches"></h4>
+      <button id="reset" class="btn">Qayta o'ynash</button>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
